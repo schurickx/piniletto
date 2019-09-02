@@ -1,0 +1,27 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  width: 1500px;
+  grid-template-areas: " header" "navbar" "content";
+  grid-template-rows: 245px 220px 1fr;
+  grid-gap: 12px;
+}
+
+.main-content {
+  margin-top: 1rem;
+  grid-area: content;
+}

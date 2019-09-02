@@ -1,0 +1,77 @@
+.main {
+  width: 1500px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "textile colors user" "works stocks articles" "new new articles";
+  -ms-grid-columns: 2fr 2fr 1.2fr;
+      grid-template-columns: 2fr 2fr 1.2fr;
+  grid-auto-rows: 2fr 2fr 3fr;
+  grid-gap: 25px;
+  min-height: 800px;
+}
+
+.textile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: textile;
+  background-color: orange;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.array-colors {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: colors;
+  background-color: blue;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.user-menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: user;
+  background-color: yellow;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.works {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: works;
+  background-color: green;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.stocks {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: stocks;
+  background-color: pink;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.articles {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: articles;
+  background-color: red;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+.new {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: new;
+  background-color: gray;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
